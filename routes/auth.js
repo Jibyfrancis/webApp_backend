@@ -7,6 +7,9 @@ const secretKey = "mdfj948q34092342084@34"
 const verifyToken = require('../verifyTocken')
 const multer = require('multer')
 const cloudinary = require('cloudinary').v2;
+const key=process.env.api_key
+const api_key=process.env.api_secret
+
 
 
 
@@ -33,8 +36,8 @@ const upload = multer({
 
 cloudinary.config({
   cloud_name: "dmxojmunj",
-  api_key: "115766756534977",
-  api_secret: "Iv-J0UJBdFQRTbtJ-EPaH7c8XIA"
+  api_key: key,
+  api_secret: api_key
 });
 
 
